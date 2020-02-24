@@ -8,6 +8,10 @@ layout: default
 
 {{ content }}
 
+{% if page.use_math %}
+ {% include mathjax_support.html %}
+{% endif %}
+
 {%- if site.posts.size > 0 -%}
   <ul class="posts">
     <li>
